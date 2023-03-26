@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    	<header class="header">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a  class="navbar-brand"  href="home.html">
+				        <i class="glyphicon glyphicon-book" style="color:white; font-size:30px; text-align:center;"> </i>
+                    </a>
+
+
+                    <ul class="main-nav">
+
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Popular</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Recommendation</a></li>
+
+                        <div class="container">
+                            <h4>Username:<script>document.write(localStorage.getItem('name'));</script></h4>
+                        </div>
+
+                        <div class="nav-item" style="float:right">
+                        <button class="login100-form-btn" onclick="Logout();" style="float: right;">
+                            Sign Out
+                        </button>
+                        </div>
+
+                    </ul>
+                </div>
+            </nav>
+
+
+
+	</header>
+
+    <style>
+    body {
+        background-image: url('image.jpg');
+    }
+    </style>
+    <body>
+        <form class="example" action="#">
+            <input type="text" placeholder="Search.." name="search" style="float:center">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </body>
+    <script>
+<!--    let name=localStorage.getItem('name')?localStorage.getItem('name'):''-->
+<!--    console.log(name);-->
+<!--    if (name=='')-->
+<!--    {-->
+<!--        alert('You Need To Login First');-->
+<!--        window.location.href="index.html"-->
+<!--    }-->
+<!--        function Logout(){-->
+<!--            localStorage.removeItem('name');-->
+<!--            window.location.href="index.html"-->
+<!--        }-->
+    </script>
+
+</html>
